@@ -3,8 +3,7 @@ import { NativeBaseProvider, StatusBar } from 'native-base';
 
 import { Loading } from './src/components/Loading';
 import { AuthContextProvider } from './src/contexts/AuthContext';
-import { New } from './src/screens/New';
-import { SignIn } from './src/screens/SignIn';
+import { Pools } from './src/screens/Pools';
 import { THEME } from './src/styles/theme';
 
 
@@ -19,7 +18,7 @@ export default function App() {
           backgroundColor='transparent'
           translucent
         />
-        {fontsLoaded?<SignIn />:<Loading />}
+        {fontsLoaded?<Pools />:<Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
